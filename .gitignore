@@ -1,5 +1,8 @@
 .DS_Store
 to-do.txt
+_region_.pdf
+_region_.tex
+auto/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
