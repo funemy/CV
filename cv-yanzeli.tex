@@ -97,7 +97,7 @@
 		College Station, Texas, USA
 	\end{minipage}
 	\begin{minipage}[t]{0.495\textwidth}
-		Location: 419B, HRBB \\
+		% Location: 419B, HRBB \\
 		Email: yanzeli@tamu.edu \\
 		Web: \href{https://liyz.pl}{https://liyz.pl} \\
 %		Phone: +1 617 373 7938
@@ -112,9 +112,10 @@
 	\section*{Research Interests}
 	
 	\begin{itemize}
-		\item My area of interest is \textbf{Static Analysis} and \textbf{Programming Language}. 
-		In particular, I'm interested in developing efficient static analysis that can scale to extremely large codebase and various code changes with an emphasis on concurrency-related bugs.
-		Other than that, I'm also broadly interested in other PL techniques which benefit modern programming languages such as Type System, etc.
+		\item My area of interest are \textbf{Programming Language} and \textbf{Static Analysis}. 
+		I develop static analysis tools that can scale to large codebase and various code changes with an emphasis on concurrency-related bugs (race detection, deadlock detection, etc.).
+		Recently, I'm switching my focus to something more "formal", such as verification, type system, etc.,
+		and I'm actively looking for PhD openings in these areas.
 		My goal is to improve programming productivity and software reliability from a PL perspective.
 
 	\end{itemize}
@@ -134,6 +135,7 @@
 		
 		\item[M.S.]  \tab Computer Science, Texas A\&M University, 2017-Present \\
 		\textit{Advisor: Jeff Huang}\\
+		\textit{Thesis: Efficient and Scalable Whole Program Race Detection for Java and Android Programs}\\
 		GPA: 4.0/4.0
 		
 		\item[B.Eng.]  \tab Electrical Engineering, Huazhong University of Science and Technology, 2017 \\
@@ -150,20 +152,31 @@
 
 	\section*{Publications}
 	\begin{tablist}
-		\item[ICSE 19'] \tab (Demo Track) \textbf{Yanze Li}, Bozhen Liu, Jeff Huang, \enquote{SWORD: A Scalable Whole Program Race Detector for Java}
+		% \item[SC 20'] \tab \textit{\enquote{OMPRacer: A Scalable and Precise Static Race Detector for OpenMP Programs}}\\
+		% 		           Bradley Swain, \textbf{Yanze Li}, Peiming Liu, Ignacio Laguna, Giorgis Georgakoudis, Jeff Huang
+		\item[ICSE 19'] \tab (Demo Track) \textit{\enquote{SWORD: A Scalable Whole Program Race Detector for Java}} \\
+							 \textbf{Yanze Li}, Bozhen Liu, Jeff Huang
 	\end{tablist}
 
 %-----------------------------------------------------------------------
 % TODO Professional Experiences
 %-----------------------------------------------------------------------
+\renewcommand{\listtabwidth}{2.5cm}
 	\section*{Projects}
 	
 	\begin{tablist}
+		\item[\textbf{LLVMRace}]
+		\tab An LLVM-based race detector, found several previously unkown bugs in Linux kernel, covid-sim (the simulation program for COVID-19), memcached, and GraphBLAS.
+		\item[\textbf{OMPRacer}] 
+		\tab An LLVM-based race detector for OpenMP programs, 
+		using a SMT sovler and value-flow analysis to reason about interprocedure array accesses.\\
+		Found a previously unknown bug in ECP proxy applications.
 		\item[\textbf{Crappie}] 
-		\tab (Ongoing project) An efficient incremental race detection engine that can scale to distributed systems and Android apps
+		\tab An incremental race detection engine that scales to distributed systems and Android apps and has been implemented as a Intellij IDEA plugin.
 		\item[\textbf{SWORD}] 
-		\tab A whole program race detector on Java source code and has been integrated into Eclipse.
+		\tab A whole program race detector for Java (source code/bytecode) and has been implemented as a Eclipse plugin.
 	\end{tablist}
+\renewcommand{\listtabwidth}{1.75cm}
 
 %-----------------------------------------------------------------------
 % TODO AWARD
@@ -187,6 +200,7 @@
 	
 	\subsection*{Sub-Reviewer}
 	\begin{tablist}
+		\item[2020] \tab OOPSLA
 		\item[2019] \tab PLDI, ICSE, FSE, OOPSLA
 		\item[Journal] \tab TSE
 	\end{tablist}
@@ -341,28 +355,28 @@
 % TODO SKILL
 %-----------------------------------------------------------------------
 
-	\section*{Skills}
+	% \section*{Skills}
 	
-	\subsection*{Research}
+	% \subsection*{Research}
 	
-	\begin{itemize}
+	% \begin{itemize}
 		
-		\item Static Analysis, Concurrency
+	% 	\item Static Analysis, Concurrency
 		
-	\end{itemize}
+	% \end{itemize}
 	
-	\subsection*{Languages}
+	% \subsection*{Languages}
 	
-	\begin{itemize}
+	% \begin{itemize}
 		
-		\item Java, Scala, Idris, OCaml, JavaScript, Python, Ruby, C/C++
+	% 	\item C++, Agda, OCaml, Java, JavaScript, Python, Ruby
 		
-	\end{itemize}
+	% \end{itemize}
 	
-	\subsection*{Misc}
-	\begin{itemize}
-		\item WALA, Soot, Doop
-	\end{itemize}
+	% \subsection*{Misc}
+	% \begin{itemize}
+	% 	\item LLVM, WALA, Soot, Doop
+	% \end{itemize}
 	
 
 	
