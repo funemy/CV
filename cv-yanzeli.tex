@@ -91,16 +91,16 @@
 	
 	% contact info
 	\vspace{1em}
-	\begin{minipage}[t]{0.495\textwidth}
-		ASER, Parasol Lab \\
-		Texas A\&M University \\
-		College Station, Texas, USA
-	\end{minipage}
+%	\begin{minipage}[t]{0.495\textwidth}
+%		ASER, Parasol Lab \\
+%		Texas A\&M University \\
+%		College Station, Texas, USA
+%	\end{minipage}
 	\begin{minipage}[t]{0.495\textwidth}
 		% Location: 419B, HRBB \\
 		Email: yanzeli@tamu.edu \\
 		Web: \href{https://liyz.pl}{https://liyz.pl} \\
-%		Phone: +1 617 373 7938
+		Phone: +1 979 204 9448
 	\end{minipage}
 	\vspace{0.5em}
 	
@@ -162,11 +162,43 @@
 % TODO Professional Experiences
 %-----------------------------------------------------------------------
 \renewcommand{\listtabwidth}{2.5cm}
+	\section*{Research Experience}
+
+	\begin{tablist}[style=multiline, leftmargin=*]
+		\item[2020.8-]
+		\tab \textbf{Research Intern, Utrecht University, Netherland}\\
+		\tab Working with Dr. Jurriaan Hage on Helium compiler. Implementing its LLVM backend,\\
+		\tab FFI and module system.
+		\item[2018.6- 2020.6]
+		\tab \textbf{Research Assistant, Texas A\&M University, USA}\\
+		\tab Working on static analysis for concurrent program. Developed tools that scale to \\
+		\tab million lines of Java/C++/Android programs and efficiently detect potential data races\\
+		\tab and deadlocks.
+	\end{tablist}
+
+ 	\section*{Work Experience}
+	
+	\begin{tablist}[style=multiline, leftmargin=*]
+		\item[2019.7-]
+		\tab \textbf{Software Engineer, Coderrect Inc., USA}\\
+		\tab Working as the main developer of an LLVM-based program analysis tool to detect\\
+		\tab concurrency bugs and anti-patterns in C/C++/Fortran/CUDA code. I've designed a\\
+		\tab highly efficient static happens-before graph, lock tracking algorithm and race detection\\
+		\tab algorithm which enable the tool to analyze million lines of code in minutes accurately.
+		\item[2015- 2017]
+		\tab \textbf{Software Enigneer, Nightingale Technology, China}\\
+		\tab Working on a second-hand commodities trading platform for college students and an\\
+		\tab integrated web application for editing and publishing news articles as well as managing\\
+		\tab and visualizing their statistics.
+	\end{tablist}
+
 	\section*{Projects}
 	
 	\begin{tablist}
+		\item[\textbf{Helium}]
+		\tab (Ongoing) A compiler for a subset of Haskell that aims at delivering high quality type error messages particularly for beginner programmers. It also includes facilities for specializing type error diagnosis for embedded domain specific languages.
 		\item[\textbf{LLVMRace}]
-		\tab An LLVM-based race detection framework, found several previously unkown bugs in Linux kernel, Redis, memcached, and GraphBLAS.
+		\tab (Ongoing) An LLVM-based race detection framework, found several previously unkown bugs in Linux kernel, Redis, memcached, and GraphBLAS.
 		\item[\textbf{OMPRacer}] 
 		\tab An LLVM-based race detector for OpenMP programs, 
 		using the SMT sovler and value-flow analysis to reason about interprocedure array accesses.\\
