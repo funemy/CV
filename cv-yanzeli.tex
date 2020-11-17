@@ -87,7 +87,8 @@
 	\raggedright
 	
 	% display name as the document title
-	\namefont{\myname}
+	
+		\namefont{\myname}
 	
 	% contact info
 	\vspace{1em}
@@ -96,14 +97,13 @@
 %		Texas A\&M University \\
 %		College Station, Texas, USA
 %	\end{minipage}
-	\begin{minipage}[t]{0.495\textwidth}
+	\begin{minipage}[c]{0.3\textwidth}
 		% Location: 419B, HRBB \\
 		Web: \href{https://liyz.pl}{https://liyz.pl} \\		
 		Phone: +1 979 204 9448\\
 		Email: liyzunique@gmail.com
 	\end{minipage}
-	\vspace{0.5em}
-	
+	\vspace{-0.5em}
 
 %-----------------------------------------------------------------------
 % TODO RESEARCH INTERESTS
@@ -122,7 +122,8 @@
 
 %\item My previous research focused on program analysis on concurrent programs. I developed static analysis tools that detect concurrency bugs and made them scale to large code bases. Nowadays, I'm more interested in the formal aspects of programming languages such as type theory, language semantics and design. I also enjoy applying PL techniques to guarantee the correctness of complex programs.
 
-\item My research interest lies in program verification and static analysis, as well as their applications on real complex systems. I also enjoy the formal aspects of programming language, such as type system, language semantics and design, especially leveraging them to facilitate tasks like verification, synthesis, resource analysis, etc.
+\item I'm interested in the formal aspect of programming language, such as type systems, language semantics and design, in particular, how they can facilitate tasks like verification, synthesis, resource analysis, etc.
+I'm also interested in program verification and static analysis, especially their applications on real complex systems.
 
 	\end{itemize}
 
@@ -159,9 +160,11 @@
 	\section*{Publications}
 	\begin{tablist}
 		 \item[SC'20] \tab \textit{\enquote{OMPRacer: A Scalable and Precise Static Race Detector for OpenMP Programs}}\\
-		 		           Bradley Swain, \textbf{Yanze Li}, Peiming Liu, Ignacio Laguna, Giorgis Georgakoudis, Jeff Huang
+		 		           Bradley Swain, \textbf{Yanze Li}, Peiming Liu, Ignacio Laguna, Giorgis Georgakoudis, Jeff Huang\\
+		 		           \textit{To appear In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis.}
 		\item[ICSE'19] \tab (Demo Track) \textit{\enquote{SWORD: A Scalable Whole Program Race Detector for Java}} \\
-							 \textbf{Yanze Li}, Bozhen Liu, Jeff Huang
+							 \textbf{Yanze Li}, Bozhen Liu, Jeff Huang\\
+							 \textit{In 2019 IEEE/ACM 41st International Conference on Software Engineering: Companion Proceedings (ICSE-Companion) (pp. 75-78). IEEE.}
 	\end{tablist}
 
 %-----------------------------------------------------------------------
@@ -172,9 +175,9 @@
 
 	\begin{tablist}[style=multiline, leftmargin=*]
 		\item[2020.8-]
-		\tab \textbf{Research Intern, Utrecht University, Netherland}\\
-		\tab Working with Dr. Jurriaan Hage on Helium compiler. Implementing its LLVM backend\\
-		\tab and FFI.
+		\tab \textbf{Research Intern (Remote), Utrecht University, Netherland}\\
+		\tab Working with Dr. Jurriaan Hage on a haskell compiler called Helium. Implementing its\\
+		\tab LLVM backend and FFI.
 		\item[2018.6- 2020.6]
 		\tab \textbf{Research Assistant, Texas A\&M University, USA}\\
 		\tab Worked on static analysis for concurrent programs. Developed tools that scale to million\\
@@ -199,18 +202,20 @@
 		\tab and visualizing their statistics.
 	\end{tablist}
 
+\vspace{-0.5em}
+
 \renewcommand{\listtabwidth}{2.5cm}
 	\section*{Projects}
 	
 	\begin{tablist}
 		\item[\textbf{Helium}]
 		\tab (Ongoing) A compiler for a subset of Haskell that aims at delivering high quality type error messages particularly for beginner programmers. It also includes facilities for specializing type error diagnosis for embedded domain specific languages.
-		\item[\textbf{LLVMRace}]
-		\tab (Ongoing) An LLVM-based race detection framework, found several previously unkown bugs in Linux kernel, Redis, memcached, and GraphBLAS.
+		\item[\textbf{Coderrect}]
+		\tab (Ongoing) An LLVM-based static analyzer, specialize in detecting concurrency related bugs and anti-patterns, found several previously unkown bugs in Linux kernel, Redis, memcached, and GraphBLAS.
 		\item[\textbf{OMPRacer}] 
 		\tab An LLVM-based race detector for OpenMP programs, 
-		using the SMT sovler and value-flow analysis to reason about interprocedure array accesses.\\
-		Found several previously unknown bug in ECP proxy applications and covid-sim (the simulation program for COVID-19).
+		using inter-procedure value-flow analysis to reason about array accesses.
+		Found several previously unknown bugs in ECP proxy applications and a major simulator for COVID-19.
 		\item[\textbf{Crappie}] 
 		\tab An incremental race detection engine that scales to distributed systems and Android apps and has been implemented as an Intellij IDEA plugin.
 		\item[\textbf{SWORD}] 
@@ -221,7 +226,7 @@
 %-----------------------------------------------------------------------
 % TODO AWARD
 %-----------------------------------------------------------------------
-
+\vspace{-0.5em}
 \section*{Honor and Awards}
 
 \begin{tablist}
@@ -235,8 +240,11 @@
 %-----------------------------------------------------------------------
 % TODO SEVERICE
 %-----------------------------------------------------------------------
-	
+	\vspace{-0.5em}
 	\section*{Service}
+	\begin{tablist}
+		\item[2020.8-] \tab Volunteer for International PL Mentorship Program
+	\end{tablist}
 	
 	\subsection*{Sub-Reviewer}
 	\begin{tablist}
