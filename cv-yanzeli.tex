@@ -16,6 +16,12 @@
 \usepackage{geometry} % manually set page margins
 \usepackage{enumitem} % enumerate with [resume] option
 \usepackage{titlesec} % allow custom section fonts
+\usepackage{fancyhdr}
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\lhead{U-M ID: 00828870}
+%\rhead{Yanze Li, CSE Ph.D.}
 
 % what is your name?
 \newcommand{\myname}{Yanze Li}
@@ -77,7 +83,7 @@
 	colorlinks = true,
 	urlcolor = black,
 	pdfauthor = {\myname},
-	pdfkeywords = {Computer Science, Programming Language, Software Engineering},
+	pdfkeywords = {Computer Science, Programming Language},
 	pdftitle = {\myname: Curriculum Vitae},
 	pdfsubject = {Curriculum Vitae},
 	pdfpagemode = UseNone
@@ -87,9 +93,8 @@
 	\raggedright
 	
 	% display name as the document title
-	
 		\namefont{\myname}
-	
+
 	% contact info
 	\vspace{1em}
 %	\begin{minipage}[t]{0.495\textwidth}
@@ -97,10 +102,12 @@
 %		Texas A\&M University \\
 %		College Station, Texas, USA
 %	\end{minipage}
-	\begin{minipage}[c]{0.3\textwidth}
+	\begin{minipage}[c]{0.7\textwidth}
 		% Location: 419B, HRBB \\
+%		Program: Computer Science \& Engineering Ph.D., Fall 2021\\
+%		U-M ID: 00828870\\
 		Web: \href{https://liyz.pl}{https://liyz.pl} \\		
-		Phone: +1 979 204 9448\\
+%		Phone: +1 979 204 9448\\
 		Email: liyzunique@gmail.com
 	\end{minipage}
 	\vspace{-0.5em}
@@ -122,8 +129,9 @@
 
 %\item My previous research focused on program analysis on concurrent programs. I developed static analysis tools that detect concurrency bugs and made them scale to large code bases. Nowadays, I'm more interested in the formal aspects of programming languages such as type theory, language semantics and design. I also enjoy applying PL techniques to guarantee the correctness of complex programs.
 
-\item I'm interested in the formal aspect of programming language, such as type systems, language semantics and design, in particular, how they can facilitate tasks like verification, synthesis, resource analysis, etc.
-I'm also interested in program verification and static analysis, especially their applications on real complex systems.
+%\item I'm interested in the formal aspect of programming language, such as type systems, language semantics and design, in particular, how they can facilitate tasks like verification, synthesis, resource analysis, etc. I'm also interested in program verification and static analysis, especially their applications on real complex systems.
+
+\item My research interests lie in programming language design and implementation, program analysis, verification, and synthesis. I'm particularly enthusiastic about how we can exploit programming languages (such as their type systems) to facilitate verification or synthesis tasks and apply them to real-world systems.
 
 	\end{itemize}
 
@@ -161,10 +169,10 @@ I'm also interested in program verification and static analysis, especially thei
 	\begin{tablist}
 		 \item[SC'20] \tab \textit{\enquote{OMPRacer: A Scalable and Precise Static Race Detector for OpenMP Programs}}\\
 		 		           Bradley Swain, \textbf{Yanze Li}, Peiming Liu, Ignacio Laguna, Giorgis Georgakoudis, Jeff Huang\\
-		 		           \textit{To appear In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis.}
+		 		           \textit{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2020.}
 		\item[ICSE'19] \tab (Demo Track) \textit{\enquote{SWORD: A Scalable Whole Program Race Detector for Java}} \\
 							 \textbf{Yanze Li}, Bozhen Liu, Jeff Huang\\
-							 \textit{In 2019 IEEE/ACM 41st International Conference on Software Engineering: Companion Proceedings (ICSE-Companion) (pp. 75-78). IEEE.}
+							 \textit{2019 IEEE/ACM 41st International Conference on Software Engineering: Companion Proceedings (ICSE-Companion). IEEE, 2019.}
 	\end{tablist}
 
 %-----------------------------------------------------------------------
@@ -176,7 +184,7 @@ I'm also interested in program verification and static analysis, especially thei
 	\begin{tablist}[style=multiline, leftmargin=*]
 		\item[2020.8-]
 		\tab \textbf{Research Intern (Remote), Utrecht University, Netherland}\\
-		\tab Working with Dr. Jurriaan Hage on a haskell compiler called Helium. Implementing its\\
+		\tab Working with Dr. Jurriaan Hage on a Haskell compiler called Helium. Implementing its\\
 		\tab LLVM backend and FFI.
 		\item[2018.6- 2020.6]
 		\tab \textbf{Research Assistant, Texas A\&M University, USA}\\
@@ -195,7 +203,7 @@ I'm also interested in program verification and static analysis, especially thei
 		\tab concurrency bugs and anti-patterns in C/C++/Fortran/CUDA code. I've designed a\\
 		\tab highly efficient static happens-before graph, lock tracking algorithm and race detection\\
 		\tab algorithm which enable the tool to analyze million lines of code in minutes accurately.
-		\item[2015- 2017]
+		\item[2015.11- 2017.4]
 		\tab \textbf{Software Engineer, Nightingale Technology, China}\\
 		\tab Worked on a second-hand commodities trading platform for college students and an\\
 		\tab integrated web application for editing and publishing news articles as well as managing\\
@@ -243,7 +251,7 @@ I'm also interested in program verification and static analysis, especially thei
 	\vspace{-0.5em}
 	\section*{Service}
 	\begin{tablist}
-		\item[2020.8-] \tab Volunteer for International PL Mentorship Program
+		\item[2020.8-] \tab Volunteer for SIGPLAN PL Mentorship Program
 	\end{tablist}
 	
 	\subsection*{Sub-Reviewer}
